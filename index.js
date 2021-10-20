@@ -1,5 +1,6 @@
 const fs = require('fs');
 const inquirer = require('inquirer');
+const generateMarkdown = require('./utils/generateMarkdown');
 
 const questions = () => {
     return inquirer.prompt([
@@ -48,7 +49,7 @@ const questions = () => {
         choices: ['MIT','ISC','Apache','GNU GPLv3','N/A'],
         validate:(value)=>{if(value){return true} else{return "Please enter valid information"}},
         },
-        
+
         {  type: "input",
         message:"Please enter Github Username",
         name: "git",
@@ -64,9 +65,28 @@ const questions = () => {
 }
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+function writeToFile(fileName, data) {
+    return new Promise((resolve, reject) => {
+        fs.writeFile(fileName, data, err => {
+            if (err) {
+                reject(err);
+                return;
+            }
+            
+            resolve({
+                ok:true,
+                message: "README file created"
+            })
+        })
+    })
+}
 
 // TODO: Create a function to initialize app
-function init() {}
+function init() {
+    questions()
+    .then(questionsData => {
+        writeToFile("./README.md", generateMarkdown(questionsData))
+    })
+}
 
 init();
