@@ -48,13 +48,7 @@ const questions = () => {
         choices: ['MIT','ISC','Apache','GNU GPLv3','N/A'],
         validate:(value)=>{if(value){return true} else{return "Please enter valid information"}},
         },
-
-        {  type: "input",
-        message:"Who is credit is this work?",
-        name: "credit",
-        validate:(value)=>{if(value){return true} else{return "Please enter valid information"}},
-        },
-
+        
         {  type: "input",
         message:"Please enter Github Username",
         name: "git",
