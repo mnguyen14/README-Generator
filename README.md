@@ -24,8 +24,9 @@ Run 'node index' in your terminal and you will be prompted with multiple questio
 
 Here is a demo video(There is also one in the assets folder):
 
-[![DEMO VIDEO](https://img.youtu.be/cxeOFSCQP7I)](https://youtu.be/cxeOFSCQP7I)
+[![DEMO VIDEO](https://img.youtube.com/vi/cxeOFSCQP7I/0.jpg)](https://youtu.be/cxeOFSCQP7I)
 
+An example of the end product would be this README, except I added to the usage tab and deleted the contribution tab.
 
 ## License
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
