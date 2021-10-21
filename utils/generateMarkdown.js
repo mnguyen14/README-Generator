@@ -20,16 +20,19 @@ const renderLicenseBadge = (license) => {
   
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
-return `
-  
-# ${data.title}
+return `# ${data.title}
 
 # Table of Content
 [Description](#Description)
+
 [Installation](#Installation)
+
 [Usage](#Usage)
+
 [License](#License)
+
 [Contact](#Contact)
+
 [Contribution](#Contribution)
 
 ## Description
@@ -45,7 +48,8 @@ ${data.usage}
 ${renderLicenseBadge(data.license)}
 
 ## Contact
-github.com/${data.github}
+https://github.com/${data.github}
+
 Email: ${data.email}
 
 ## Contribution

@@ -1,13 +1,16 @@
-
-  
 # README Generator
 
 # Table of Content
 [Description](#Description)
+
 [Installation](#Installation)
+
 [Usage](#Usage)
+
 [License](#License)
+
 [Contact](#Contact)
+
 [Contribution](#Contribution)
 
 ## Description
@@ -23,5 +26,9 @@ Run 'npm install' in your terminal
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Contact
-github.com/mnguyen14
+https://github.com/mnguyen14
+
 Email: matthewnguyen0814@gmail.com
+
+## Contribution
+undefined
