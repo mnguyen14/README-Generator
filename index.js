@@ -4,8 +4,7 @@ const fs = require("fs");
 const generateMarkdown = require("./utils/generateMarkdown");
 
 // TODO: Create an array of questions for user input
-const questions = [
-    
+const questions = [   
     {
         type: "input",
         message: "What is your project's title?",
@@ -44,7 +43,7 @@ const questions = [
     {
         type: "input",
         message: "What is your GitHub user name?",
-        name: "Github",
+        name: "github",
         validate:(value)=>{if(value){return true} else{return "Please enter valid information"}}
     },
     {
