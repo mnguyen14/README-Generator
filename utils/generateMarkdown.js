@@ -26,13 +26,12 @@ function generateMarkdown(data) {
 # Table of Content
 1. [Title](#Title)
 2. [Description](#Description)
-3. [License](#License)
-4. [Installation](#Installation)
-5. [Tests](#Tests)
-6. [Usage](#Usage)
-7. [Contribution](#Contribution)
-8. [Github](#Github)
-9. [E-mail](#Email)  
+3. [Installation](#Installation)
+4. [Usage](#Usage)
+5. [License](#License)
+6. [Github](#Github)
+7. [E-mail](#Email)
+8. [Contribution](#Contribution)
 
 ## Title
 ${data.Title}
@@ -40,26 +39,23 @@ ${data.Title}
 ## Description
 ${data.description}
 
-## License
-${renderLicenseBadge(data.license)}
-
 ## Installation
 ${data.installation}
-
-## Tests
-${data.tests}
 
 ## Usage
 ${data.usage}
 
-## Contribution
-${data.contribution}
+## License
+${renderLicenseBadge(data.license)}
 
 ## Github
 ${data.github}
 
 ## E-mail
-${data.email}`;
+${data.email}
+
+## Contribution
+${data.contribution}`;
 }
 
 module.exports = generateMarkdown;

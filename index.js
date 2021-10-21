@@ -15,13 +15,24 @@ const questions = [
 
     {
         type: "input",
-        message: "Please write a short description of your project.",
+        message: "Please write a description of your project.",
         name: "description",
         validate:(value)=>{if(value){return true} else{return "Please enter valid information"}}
     },
     {
+        type: "input",
+        message: "What command should be run to install the application?",
+        name: "installation",
+        default: "Run 'npm install' in your terminal"
+    },
+    {
+        type: "input",
+        message: "Description on how to use your application.",
+        name: "usage"
+    },
+    {
         type: "list",
-        message: "What license should your project have?",
+        message: "License",
         name: "license",
         choices: [
             "MIT",
@@ -29,28 +40,6 @@ const questions = [
             "Apache",
             "None"  
         ]
-    },
-    {
-        type: "input",
-        message: "What command should be run to install the application?",
-        name: "installation",
-        default: "npm i"
-    },
-    {
-        type: "input",
-        message: "What command should be run to run tests?",
-        name: "tests",
-        default: "npm run test"
-    },
-    {
-        type: "input",
-        message: "What does the user need to know about using the repository?",
-        name: "usage"
-    },
-    {
-        type: "input",
-        message: "What does the user need to know about contributing to the repository?",
-        name: "contribute"
     },
     {
         type: "input",
@@ -64,7 +53,11 @@ const questions = [
         name: "email",
         validate:(value)=>{if(value){return true} else{return "Please enter valid information"}}
     },
-
+    {
+        type: "input",
+        message: "Guidelines for other users to contribute.",
+        name: "contribute"
+    },
 ]
 
 // TODO: Create a function to write README file
