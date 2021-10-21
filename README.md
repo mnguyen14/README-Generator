@@ -23,7 +23,8 @@ Run 'npm install' in your terminal
 Run 'node index' in your terminal and you will be prompted with multiple questions about your application or website.
 
 Here is a demo video(There is also one in the assets folder):
-https://youtu.be/cxeOFSCQP7I
+
+[![DEMO VIDEO](https://img.youtu.be/cxeOFSCQP7I)](https://youtu.be/cxeOFSCQP7I)
 
 
 ## License
